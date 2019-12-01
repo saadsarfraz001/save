@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.example.bloodbank">
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".donorListFragment"></activity>
+        <activity android:name=".Thankyou" />
+        <activity android:name=".adminChoice" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.predict.sdk.API_KEY"
+            android:value="https://webhook.site/16259482-246c-401a-aa90-9826f5772792" />
+        <activity
+            android:name=".Tab"
+            android:label="@string/title_activity_tab"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".donorAdminFragment"
+            android:label="Donors List"
+            android:parentActivityName=".adminChoice" />
+        <activity
+            android:name=".receiverAdminFragment"
+            android:label="Receiver&apos;s List"
+            android:parentActivityName=".adminChoice" />
+    </application>
+
+</manifest>

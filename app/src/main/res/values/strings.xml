@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="firstName">Enter Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="rePassword">Retype Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signUp">Sign Up</string>
+    <string name="exit">Exit</string>
+    <string name="click">Already a member? </string>
+    <string name="signIn"><u>Sign in</u></string>
+    <string name="title_activity_tab">Tab</string>
+    <string name="tab_text_1">Blood Donor</string>
+    <string name="tab_text_2">Blood Reciever</string>
+    <string name="title_activity_admin">admin</string>
+    <string name="geofence_transition_notification_text">
+        Click notification to return to app
+    </string>
+</resources>

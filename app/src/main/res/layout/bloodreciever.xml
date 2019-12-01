@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:background="@drawable/blood"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:hint="Patient Name"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffff"
+
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Hospital Address"
+
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age of patient"
+
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+    <EditText
+        android:id="@+id/editText42"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Contact number"
+
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Blood Group : "
+        android:inputType="textPersonName"
+        android:textColor="#f7fffc"
+        android:textColorHint="#ffff"
+        android:textCursorDrawable="@null"
+
+        app:layout_constraintEnd_toEndOf="@+id/editText42"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText42"
+        app:layout_constraintTop_toBottomOf="@+id/editText42" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:textColor="#f7fffc"
+        android:textColorHint="#ffff"
+        app:layout_constraintEnd_toEndOf="@+id/editText42"
+        app:layout_constraintStart_toEndOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/editText42" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Unit needed"
+        android:inputType="number"
+
+        android:textColor="#f7fffc"
+        android:textColorHint="#ffff"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="@+id/editText42"
+        app:layout_constraintStart_toStartOf="@+id/editText42"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="13"
+        android:background="@drawable/roundedbutton"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#f5f2f2"
+        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

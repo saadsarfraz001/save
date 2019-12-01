@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".BloodDonor">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:background="@drawable/blood"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:backgroundTint="#ffff"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView1"
+        app:layout_constraintStart_toStartOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <EditText
+        android:id="@+id/editText31"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#ffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="@+id/editText1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText1"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText41"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#ffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        android:hint="Contact Number"
+        app:layout_constraintEnd_toEndOf="@+id/editText31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText31"
+        app:layout_constraintTop_toBottomOf="@+id/editText31" />
+
+    <EditText
+        android:id="@+id/editText51"
+        android:textColorHint="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#ffff"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:textCursorDrawable="@null"
+        android:textColor="#f7fffc"
+        app:layout_constraintEnd_toEndOf="@+id/editText41"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText41"
+        app:layout_constraintTop_toBottomOf="@+id/editText41" />
+
+    <EditText
+        android:id="@+id/editText61"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#ffff"
+        android:ems="10"
+        android:hint="Blood Group : "
+        android:inputType="textPersonName"
+        android:textColor="#f7fffc"
+        android:textColorHint="#ffff"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="@+id/editText51"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText51"
+        app:layout_constraintTop_toBottomOf="@+id/editText51" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:layout_marginEnd="0dp"
+        android:textColor="#f7fffc"
+        android:textColorHint="#ffff"
+        app:layout_constraintEnd_toEndOf="@+id/editText51"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText61"
+        app:layout_constraintTop_toBottomOf="@+id/editText51" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedbutton"
+        android:ems="13"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#f5f2f2"
+        app:layout_constraintEnd_toEndOf="@+id/editText51"
+        app:layout_constraintStart_toStartOf="@+id/editText51"
+        app:layout_constraintTop_toBottomOf="@+id/editText61" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
